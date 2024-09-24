@@ -1,6 +1,6 @@
-class Persona {
+export class Persona {
     nombre:string
-    edad:number
+    private edad:number
 
     
     constructor(nombre:string, edad:number) {
@@ -8,8 +8,15 @@ class Persona {
         this.edad = edad
     }
 
-    saludar():string {
+    public saludar():string {
         return `Tu nombre es ${this.nombre} y tienes ${this.edad} años`
+    }
 
+    public getEdad(): number {
+        return this.edad 
     }
 }
+
+
+
+
