@@ -14,7 +14,7 @@ class Empleado extends Persona {
    }
 
    override  saludar(): string {
-       return `Hola ${this.nombre} tu edad es ${this.getEdad} años y tu salario es de ${this.salario}`
+       return `Hola ${this.nombre} tu edad es ${this.getEdad()} años y tu salario es de ${this.salario}`
    }
 
    
