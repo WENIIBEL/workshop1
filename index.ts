@@ -1,6 +1,6 @@
 import { Persona } from "./Persona";
 
-const persona:Persona [] = [
+const personas:Persona [] = [
     new Persona ("wendy",22),
     new Persona ("Juan",32),
     new Persona ("Kely",21),
@@ -12,7 +12,7 @@ const persona:Persona [] = [
     new Persona ("Maili",20),
     new Persona ("Fredy",19)
 ]
-persona.forEach(p => console.log(p.saludar()));
+personas.forEach(persona => console.log(persona.saludar()));
 
 
 
