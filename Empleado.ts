@@ -1,12 +1,14 @@
+import { Direccion } from "./interfaces";
 import { Persona } from "./Persona";
 
-class Empleado extends Persona {
+
+export class Empleado extends Persona {
     salario:number
 
     
-    constructor(salario:number, nombre:string, edad:number) {
+    constructor(salario:number, nombre:string, edad:number, direccion:Direccion) {
         // hace llamado al constructor de la clase principal
-        super(nombre,edad)
+        super(nombre,edad,direccion)
         this.salario = salario  
     }
 
@@ -15,7 +17,7 @@ class Empleado extends Persona {
    }
 
    override  saludar(): string {
-       return `Hola ${this.nombre} tu edad es ${this.getEdad()} años y tu salario es de ${this.salario}`
+       return `Hola ${this.nombre} tu edad es ${this.getEdad()} años y tu salario es de ${this.salario} y vives en la ciudad de ${this.direccion.ciudad}`
    }
 
    
