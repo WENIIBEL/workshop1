@@ -18,7 +18,6 @@ const personas:Persona [] = [
     new Persona ("Fredy",19,{"calle": 8,"ciudad": "bogota","pais": "Colombia"},[new Coche("carro1","modelo1",2018)])
 ]
 personas.forEach(persona => console.log(persona.saludar()));
-
 const empleados:Empleado [] = [
     new Empleado (350,"juan",25,{"calle": 65,"ciudad": "medellin","pais": "Colombia"},[new Coche("carro1","modelo1",2018)]),
     new Empleado (250,"Kely",28,{"calle": 52,"ciudad": "bogota","pais": "Colombia"},[new Coche("carro1","modelo1",2018)]),
