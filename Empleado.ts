@@ -1,14 +1,15 @@
 import { Direccion } from "./interfaces";
 import { Persona } from "./Persona";
+import { Vehiculo } from "./vehiculo";
 
 
 export class Empleado extends Persona {
     salario:number
 
     
-    constructor(salario:number, nombre:string, edad:number, direccion:Direccion) {
+    constructor(salario:number, nombre:string, edad:number, direccion:Direccion, vehiculos:Vehiculo[]) {
         // hace llamado al constructor de la clase principal
-        super(nombre,edad,direccion)
+        super(nombre,edad,direccion,vehiculos)
         this.salario = salario  
     }
 
@@ -17,7 +18,11 @@ export class Empleado extends Persona {
    }
 
    override  saludar(): string {
-       return `Hola ${this.nombre} tu edad es ${this.getEdad()} años y tu salario es de ${this.salario} y vives en la ciudad de ${this.direccion.ciudad}`
+     const InfoVehiculo = this.vehiculos
+     .map((vehiculo) => `${vehiculo.marca} ${vehiculo.modelo} ${vehiculo.anio}`)
+     .join(', ')
+       return `Hola ${this.nombre} tu edad es ${this.getEdad()} años y tu salario es de ${this.salario} y vives en la ciudad de ${this.direccion.ciudad} y tus vehiculo son: ${InfoVehiculo}`
+       
    }
 
    
