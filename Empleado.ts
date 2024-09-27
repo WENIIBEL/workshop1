@@ -2,6 +2,78 @@ import { Direccion } from "./interfaces";
 import { Persona } from "./Persona";
 import { Vehiculo } from "./vehiculo";
 
+const empleado = [
+  { nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  { nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  {
+    nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  {
+    nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  {
+    nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  {
+    nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  {
+    nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  {
+    nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  {
+    nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  {
+    nombre:"nombre",
+    edad: "edad",
+    salario: "number",
+    direccion: "direccion"
+  },
+
+  
+  ]
+
 
 export class Empleado extends Persona {
     salario:number
