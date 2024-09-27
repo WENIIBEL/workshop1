@@ -22,7 +22,7 @@ export class Empleado extends Persona {
       .map((vehiculo) => `${vehiculo.marca} ${vehiculo.modelo} ${vehiculo.anio}`)
       .join(', ')
     return `Hola ${this.nombre} tu edad es ${this.getEdad()} años y tu salario es de ${this.salario} y vives en la ciudad de ${this.direccion.ciudad} y tus vehiculo son: ${InfoVehiculo} 
-    y tu estado civil es ${this.estadoCivil}`
+    y tu estado civil es ${EstadoCivil.CASADO}`
 
   }
 
