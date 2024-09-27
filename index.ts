@@ -1,6 +1,7 @@
 import { Persona } from "./Persona";
 import { Empleado } from "./Empleado";
 import { Coche } from "./Coche";
+import { empleado } from "./objetoEmpleado";
 
 
 
@@ -18,7 +19,7 @@ const personas:Persona [] = [
     new Persona ("Fredy",19,{"calle": 8,"ciudad": "bogota","pais": "Colombia"},[new Coche("carro1","modelo1",2018)])
 ]
 personas.forEach(persona => console.log(persona.saludar()));
-const empleados:Empleado [] = [
+ const empleados:Empleado [] = [
     new Empleado (350,"juan",25,{"calle": 65,"ciudad": "medellin","pais": "Colombia"},[new Coche("carro1","modelo1",2018)]),
     new Empleado (250,"Kely",28,{"calle": 52,"ciudad": "bogota","pais": "Colombia"},[new Coche("carro1","modelo1",2018)]),
     new Empleado (150,"Vilet",18,{"calle": 24,"ciudad": "pereira","pais": "Colombia"},[new Coche("carro1","modelo1",2018)]),
@@ -31,6 +32,16 @@ const empleados:Empleado [] = [
     new Empleado (654,"NIcolas",20,{"calle": 32,"ciudad": "villavicencio","pais": "Colombia"},[new Coche("carro1","modelo1",2018)])
 ]
 empleados.forEach(empleado => console.log(empleado.saludar()));
+
+
+const json = JSON.stringify(empleado)
+console.log(json)
+
+const objeto = JSON.parse(json)
+console.log(objeto)
+
+
+  
 
 
 

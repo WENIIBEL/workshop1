@@ -1,5 +1,4 @@
 
-
 export abstract class Vehiculo {
     marca: string
     modelo: string
