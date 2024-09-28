@@ -4,14 +4,16 @@ import { Persona } from "./Persona";
 import { Vehiculo } from "./vehiculo";
 
 
+
 export class Empleado extends Persona {
   salario: number
+  departamento:string
 
-
-  constructor(salario: number, nombre: string, edad: number, direccion: Direccion, vehiculos: Vehiculo[],estadoCivil:EstadoCivil) {
+  constructor(salario: number, nombre: string, edad: number, direccion: Direccion, vehiculos: Vehiculo[],estadoCivil:EstadoCivil,departamento:string) {
     // hace llamado al constructor de la clase principal
     super(nombre, edad, direccion, vehiculos,estadoCivil)
     this.salario = salario
+    this.departamento = departamento
   }
 
   trabajar(horas: number): string {
@@ -23,12 +25,8 @@ export class Empleado extends Persona {
       .map((vehiculo) => `${vehiculo.marca} ${vehiculo.modelo} ${vehiculo.anio}`)
       .join(', ')
     return `Hola ${this.nombre} tu edad es ${this.getEdad()} años y tu salario es de ${this.salario} y vives en la ciudad de ${this.direccion.ciudad} y tus vehiculo son: ${InfoVehiculo} 
-    y tu estado civil es ${EstadoCivil.CASADO}`
+    y tu estado civil es ${EstadoCivil.CASADO} y su departamento es ${this.departamento}`
 
   }
-
-  // método para devolver el array empleado a json
-
-  
 
 }
