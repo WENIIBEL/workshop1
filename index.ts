@@ -4,6 +4,7 @@ import { Coche } from "./Coche";
 import { empleado } from "./objetoEmpleado";
 import { EstadoCivil } from "./estadoCivil";
 import { Empresa } from "./Empresa";
+import { Proyecto } from "./Proyecto";
 
 
 
@@ -35,8 +36,6 @@ import { Empresa } from "./Empresa";
 ]
 empleados.forEach(empleado => console.log(empleado.saludar()));
 
-
-
 const json = JSON.stringify(empleado)
 console.log(json)
 
@@ -52,7 +51,8 @@ gestionEmpleado.EliminarEmpleados("Kely")
 gestionEmpleado.calcularTotalSalario()
 
 
-
+const proyecto1 =  new Proyecto ("proyecto1", 5 , 3,[empleados[0], empleados[1], empleados[2] ])
+console.log(proyecto1.ImprimirProyecto())
 
 
 

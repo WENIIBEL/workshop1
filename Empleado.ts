@@ -3,6 +3,7 @@ import { Direccion } from "./interfaces";
 import { Persona } from "./Persona";
 import { Vehiculo } from "./vehiculo";
 
+
 export class Empleado extends Persona {
   salario: number
 
